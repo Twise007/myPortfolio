@@ -1,0 +1,110 @@
+.about {
+  display: grid;
+  padding-top: 30px;
+  background-color: var(--color-white);
+}
+.about .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .main img {
+  display: block;
+  margin-right: 100px;
+  width: 40%;
+  border-radius: 10%;
+}
+.about .main .about-text {
+  display: block;
+  width: 500px;
+}
+.about .main .about-text h1 {
+  color: var(--color-red);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about .main .about-text h5 {
+  color: var(--color-secondary);
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.skills {
+  align-items: center;
+  overflow: hidden;
+  height: 120px;
+  width: auto;
+  display: flex;
+  background: var(--color-white);
+}
+.skills img {
+  position: relative;
+  display: flex;
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  height: 70px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px 10px 0px 10px;
+  box-shadow: 10px 10px 10px var(--color-primary);
+  margin: 10px 20px 0px 20px;
+}
+
+.containx .swiper {
+  width: 500px;
+}
+@media screen and (max-width: 500px) {
+  .containx .swiper {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 300px) {
+  .containx .swiper {
+    width: 200px;
+  }
+  .about .about-text p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+  }
+  .about-text {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    justify-content: center;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about .about-text p {
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}/*# sourceMappingURL=About.css.map */
