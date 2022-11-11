@@ -6,16 +6,22 @@ import { motion } from 'framer-motion';
 
 
 const Service = () => {
+
+    
+
+
   return (
     <motion.div
-    whileInView={{y: [0, -100], 
+    whileInView={{y: [0, -100],
     opacity: [0, 1]}}
-    transition={{duration:3}}>
+    transition={{duration:3}}
+    id="service">
         <Section>
         <Title>My Offered Service
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
         </Title>       
         <Timeline>
+
             <TimelineItem>
                     <TlIcon>
                         < BsFillBriefcaseFill />
@@ -25,6 +31,7 @@ const Service = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
             </TimelineItem>
+
             <TimelineItem>
                     <TlIcon>
                     < BsFillBriefcaseFill />
@@ -34,6 +41,7 @@ const Service = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
             </TimelineItem>
+
             <TimelineItem>
                     <TlIcon>
                     < BsFillBriefcaseFill />

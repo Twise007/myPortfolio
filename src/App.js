@@ -1,7 +1,5 @@
 import React from 'react';
 
-import {Route, Routes, Link } from 'react-router-dom';
-
 
 import About from './pages/About';
 import Contact from './pages/Contact';

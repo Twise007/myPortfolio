@@ -46,19 +46,74 @@ export const Containers = styled.div`
 `
 
 export const Btn = styled.div`
-   background: var(--color-secondary);
-   color: var(--color-white);
-   text-align: center;
-   cursor: pointer;
-   width: max-content;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    padding-left: 16px ;
-    padding-right: 16px ;
+    position: relative;
+    height: 40px;
+    display: inline-block;
+    background: var(--color-white);
+    color:var(--color-secondary);
+    text-align: center;
+    cursor: pointer;
+    width: max-content;
+    padding: 10px 16px;
     font-size: 14px ;
     font-weight: 600;
-    text-transform: uppercase;
-    border-width: 5px;
+    text-transform: capitalize;
+    border: 1px solid var(--color-secondary);
     border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    overflow: hidden;
+    :hover{
+        border: none;
+        background: rgb(237,237,237);
+    }
+    ::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: skewX(45deg) translateX(150px);
+        transition: 0.5s;
+    }
+    :hover::before{
+        transform: skewX(45deg) translateX(-150px);
+    }
 `
 
+export const Logo = styled.div`
+    position: relative;
+    width: inherit;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-secondary);
+    font-size: 20px;
+    color: var(--color-secondary);
+    background: var(--color-white) ;
+    transition: 0.5s;
+    overflow: hidden;
+    ::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: skewX(45deg) translateX(150px);
+        transition: 0.5s;
+    }
+    :hover::before{
+        transform: skewX(45deg) translateX(-150px);   
+    }
+`

@@ -12,29 +12,6 @@ export const Footercontainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .socialIcon{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0;
-        flex-wrap: wrap;
-        li{
-            list-style: none;
-            a{
-                font-size: 30px;
-                color: var(--color-white);
-                margin: 0 10px;
-                display: inline-block;
-                transition: 0.5s;
-                :hover{
-                    transform: translateY(-10px);
-                }
-
-            }
-        }
-
-    }
     p{
         color: var(--color-white);
         text-align: center;

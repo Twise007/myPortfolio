@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { BsJustifyRight, BsXLg, BsFillChatQuoteFill, BsFillLaptopFill, BsFillPersonLinesFill, BsFillPieChartFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Head, Nav_Menu} from '../Styles/Header';
+import { Head, NavMenu} from '../Styles/Header';
 import '../Styles/SaasAboutMe/About.scss';
+import { Logo } from '../components/element';
 
 
 const Header = () => {
@@ -15,12 +15,12 @@ const Header = () => {
     <div className='bar' style={{ top: '0px', position: 'sticky', borderBottom: '.5px solid', color: 'var(--color-primary)',zIndex:'10' }}>
         <div className="navbar" style={{padding:'20px', background: 'var(--color-white)'}} >
           <div className="flex-1">
-            <Link to="/"className="btn btn-ghost normal-case text-xl"><h1>My Portfolio</h1></Link>
+            <Logo id="home"className="btn btn-ghost normal-case text-xl"><h1>My Portfolio</h1></Logo>
           </div>
           <Head>    
             <div className="flex-none">
-            <ul className="menu menu-horizontal p-0 ">
-              {['About', 'Service', 'Projects', 'Testimonies', 'contact me'].map((item) => (
+            <ul className="menu menu-horizontal p-0">
+              {['about', 'service', 'projects', 'testimonies', 'contact me'].map((item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`}>{item}</a>
                 </li>
@@ -28,9 +28,8 @@ const Header = () => {
             </ul>
             </div>
           </Head>
-          </div>
-    </div> 
-    <Nav_Menu>
+
+    <NavMenu>
       <BsJustifyRight onClick={() => setToggle(true)} />
         {toggle && (
           <motion.div
@@ -41,31 +40,31 @@ const Header = () => {
             <ul className='menu'>
               <p>
                 <li>
-                  <a onClick={() => setToggle(false)}>
+                  <a href="#about" onClick={() => setToggle(false)}>
                     <BsFillPersonLinesFill/>
                   About
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => setToggle(false)}>
+                  <a href="#service" onClick={() => setToggle(false)}>
                     < BsFillLaptopFill/>
                     Services
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => setToggle(false)}>
+                  <a href="#projects" onClick={() => setToggle(false)}>
                     < BsFillPieChartFill/>
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => setToggle(false)}>
+                  <a href="#testimonies" onClick={() => setToggle(false)}>
                     < BsFillChatQuoteFill/>
                     Testimonies
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => setToggle(false)}>
+                  <a href="#contact me" onClick={() => setToggle(false)}>
                     < BsFillChatQuoteFill/>
                     Contact Me
                   </a>
@@ -74,8 +73,9 @@ const Header = () => {
             </ul>
           </motion.div>
         )}
-    </Nav_Menu>
- 
+    </NavMenu>
+    </div>
+    </div> 
   </>
   )
 }
