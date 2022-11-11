@@ -10,7 +10,7 @@ import Social from './Social';
 const Hero = () => {
   return ( 
     <>
-    <Herosection>   
+    <Herosection id="home">   
         <div className="hero-content flex-col lg:flex-row-reverse" style={{maxWidth:"100%", paddingLeft:'5rem', paddingRight:'5rem'}}>
           <img src={ProfilePicture} alt='profilepiciture' className="max-w-sm rounded-lg shadow-2xl" />
           <div>

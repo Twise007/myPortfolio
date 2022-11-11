@@ -15,7 +15,7 @@ const Header = () => {
     <div className='bar' style={{ top: '0px', position: 'sticky', borderBottom: '.5px solid', color: 'var(--color-primary)',zIndex:'10' }}>
         <div className="navbar" style={{padding:'20px', background: 'var(--color-white)'}} >
           <div className="flex-1">
-            <Logo id="home"className="btn btn-ghost normal-case text-xl"><h1>My Portfolio</h1></Logo>
+          <a href="#home" ><Logo className="btn btn-ghost normal-case text-xl"><h1>My Portfolio</h1></Logo> </a>
           </div>
           <Head>    
             <div className="flex-none">

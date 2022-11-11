@@ -12,6 +12,7 @@ import Project from './pages/Project';
 import Service from './pages/Service';
 import Testimonies from './pages/Testimonies';
 import Footer from './pages/Footer';
+import Hero from './pages/Hero';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
     <Header />
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="home" element={<App />} />
+      <Route path="home" element={<Hero />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="projects" element={<Project />} />
