@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import '../Styles/SaasAboutMe/About.scss';
 import { Section, Title} from '../components/element';
 import { motion } from 'framer-motion';
@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import Aboutpic from '../data/aboutpic.png';
 import html from '../data/html-5.png';
 import css from '../data/css-3.png';
-import JS from '../data/js.png';
+import js from '../data/js.png';
 import cisco from '../data/cisco.png';
 import github from '../data/github.png';
 import adobe from '../data/adobe-xd.png';
@@ -20,15 +20,27 @@ import sass from '../data/sass.png';
 import styled from '../data/styled-component.svg';
 import tailwind from '../data/tailwindcss.svg';
 
+const photos = [
+  {id: '1', image: html },{id: '2', image: css },
+  {id: '3', image: js },{id: '4', image: cisco },
+  {id: '5', image: github },{id: '6', image: adobe},
+  {id: '7', image: react },{id: '8', image: bootstrap },
+  {id: '9', image: wordpress },{id: '0', image: chakra },
+  {id: '11', image: materialui },{id: '12', image: sass },
+  {id: '13', image: styled },{id: '14', image: tailwind },
+  {id: '1', image: html },{id: '2', image: css },
+  {id: '3', image: js },{id: '4', image: cisco },
+  {id: '5', image: github },{id: '6', image: adobe},
+  {id: '7', image: react },{id: '8', image: bootstrap },
+  {id: '9', image: wordpress },{id: '0', image: chakra },
+  {id: '11', image: materialui },{id: '12', image: sass },
+  {id: '13', image: styled },{id: '14', image: tailwind },
 
-const photos = [cisco,html,css,sass,JS,react,github,
-adobe,styled,tailwind,bootstrap,chakra,materialui,wordpress,
-cisco,html,css,sass,JS,react,github,
-adobe,styled,tailwind,bootstrap,chakra,materialui,wordpress];
+];
 
 const About = () => {
   return (
-    <>
+    <div id='about'>
     <motion.div
     whileInView={{y: [0, -100], 
     opacity: [0, 1]}}
@@ -52,7 +64,7 @@ const About = () => {
     opacity: [0, 1]}}
     transition={{duration:3}}>
     <Section>
-      <Title>my tools
+      <Title>technologies
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
       </Title>
     </Section>
@@ -62,12 +74,12 @@ const About = () => {
     opacity: [0, 1]}}
     transition={{duration:3}}>
     <div className='skills'>
-      {photos.map((photo,i) =>  
-      <img src={`${photo.toString()}`} alt="skills" /> 
+      {photos.map((item, index) => 
+       <img src= {item.image} alt="skills" /> 
       )} 
     </div>
     </motion.div>
-    </>   
+    </div >   
 
   )
 }

@@ -14,7 +14,7 @@ export const Cardcontent = styled.div`
     padding-left: 5px;
     padding-right: 5px;
     width: 300px;
-    height: 230px;
+    height: 320px;
 `
 
 export const ImgContent = styled.div`

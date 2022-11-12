@@ -22,7 +22,8 @@ const Testimonies = () => {
     <motion.div
     whileInView={{y: [0, -100], 
     opacity: [0, 1]}}
-    transition={{duration:3}}>
+    transition={{duration:3}}
+    id="testimonies">
     <div className='containx'>
     <Section>
              <Title>Testimonies

@@ -8,23 +8,24 @@ export const Head = styled.div`
           text-transform: uppercase;
           font-weight: 500;
           &:hover {
-              color: var(--color-secondary);
-              border-bottom: 2px solid var(--color-primary); 
+            color: var(--color-secondary);
+              border-bottom: 3px solid var(--color-primary);
             }
         }
         @media (max-width: 800px) {
         display: none;
     }
 `
-export const Nav_Menu = styled.div`
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+export const NavMenu = styled.div`
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    margin-right: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--color-secondary);
     svg {
       width: 70%;
       height: 70%;
@@ -34,21 +35,18 @@ export const Nav_Menu = styled.div`
   
     div {
       position: fixed;
+      height: 100%;
       top: 0;
-      bottom: 0;
-      right: 0;
+      padding-top: 0px;
+      align-items: center;
+
+      margin-right: 14rem;
       z-index: 20;
-      padding: 15px;
-      width: 60%;
-      height: 100vh;
+      width: 20rem;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+
       flex-direction: column;
-      background: url('../');
-      background-color: var(--color-white);
-      background-size: cover;
-      background-repeat: repeat;
+      background: var(--color-white);
   
       /* top box shadow */
       box-shadow: 0px 0px 20px var(--color-secondary);
@@ -74,9 +72,6 @@ export const Nav_Menu = styled.div`
         align-items: flex-start;
         flex-direction: column;
         
-  
-        li {
-          margin: 1rem;
 
           a {
             text-decoration: none;
@@ -86,7 +81,6 @@ export const Nav_Menu = styled.div`
             &:hover {
               color: var(--color-secondary);
               border-bottom: 3px solid var(--color-primary); 
-              
             }
           }
         }
@@ -95,11 +89,6 @@ export const Nav_Menu = styled.div`
       @media screen and (min-width: 800px) {
         display: none;
       }
-    }
-  
-    @media screen and (min-width: 800px) {
-      display: none;
-    }
 `
 
 

@@ -1,68 +1,64 @@
-import React, { useState, useEffect} from 'react';
-import {Section, Title } from '../components/element';
-import { motion } from 'framer-motion';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import React, { useState, useEffect } from 'react';
+import {Btn, Section, Title } from '../components/element';
+import '../Styles/Project.css';
 
 
-
-const Project = () => {
-
-  const [activeFilter, setactiveFilter] = useState('All');
-  const [animateCard, setanimateCard] = useState({y: 0, opacity: 1});
-  const [works, setWorks] = useState([]);
-  const [filrterWorks, setFilrterWorks] = useState([]);
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-    client.fetch(query)
-      .then((data) => {
-        setWorks(data);
-        setFilterWork(data);
-      })
-  }, [])
+  const cardData = {
+    data:
+    [
+      {id: '1', imageName: 'project1.png', tag:'web design', btn:'READ MORE 1', desc:'lhhdgvfgvhqwagkdsgwa', title:'title1'},
+      {id: '2', imageName: 'img2.jpg', tag:'web develop', btn:'READ MORE 2', desc:'lhhdgvfgvhqwagkdsgwa', title:'title2' },
+      {id: '3', imageName: 'img3.jpg', tag:'UIUX Design', btn:'READ MORE 3', desc:'lhhdgvfgvhqwagkdsgwa', title:'title3'},
+      {id: '4', imageName: 'img4.jpg', tag:'web design', btn:'READ MORE 4', desc:'lhhdgvfgvhqwagkdsgwa', title:'title4'},
+      {id: '5', imageName: 'img5.jpg', tag:'web develop', btn:'READ MORE 5', desc:'lhhdgvfgvhqwagkdsgwa', title:'title5'},
+    ]
+}
   
+const Project = () => {
+  const [tag, setTag] = useState('all');
+  const [filteredData, setFilteredData] = useState([]);
 
-
-  const handleWorkFilter = (item) => {
-    className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
-  }
+  useEffect( () => {   
+    tag === 'all' ? setFilteredData(cardData.data)
+     : setFilteredData(cardData.data.filter(item => item.tag === tag))
+    }, 
+    [tag]
+  );
 
   return (
-    <motion.div
-    whileInView={{y: [0, -100], 
-    opacity: [0, 1]}}
-    transition={{duration:3}}>
-        <Section>
+        <Section id="projects">
             <Title>My Latest Featured Projects
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
             </Title>
-          <div className='app__work-filter'>
-            {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
-              <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              >
-
-              </div>
-            ))}
+        <section  handleSetTag= {setTag}>
+          <ul>
+            <li> <TagButton name='all' handleSetTag= {setTag} tagActive={ tag === 'all' ? true : false}/></li>
+            <li> <TagButton name='web design' handleSetTag= {setTag} tagActive={ tag === 'web design' ? true : false}/></li>
+            <li> <TagButton name='web develop' handleSetTag= {setTag} tagActive={ tag === 'web develop' ? true : false}/></li>
+            <li> <TagButton name='UIUX Design' handleSetTag= {setTag} tagActive={ tag === 'UIUX Design' ? true : false}/></li>
+          </ul>
+          <div className="product">
+            {filteredData.map((item, index) => 
+            <div className='itemBox'>
+              <img src={`/images/${item.imageName}`} alt='project pic'/>
+              <Btn>{item.btn}</Btn>
+              <h5>{item.title}</h5>
+              <p>{item.desc}</p>
+            </div>
+            )}
           </div>
-
-          <motion.div
-            animate={animateCard}
-            transition={{duration: 0.5, delayChildren: 0.5}}
-            className="app__work-portfolio"
-          >
-            {filrterWork.map((work, index)=>(
-              <div className='app__work-item app__flex' key={index}>
-                <div className='app__work-img app__flex'>
-                  <img src={urlFor()} alt={work.name} />
-                </div>
-              </div>
-            ))}
-          </motion.div>
-
+        </section>
         </Section>
-    </motion.div>
   )
 }
 
-export default Project
+//button
+const TagButton = ( {name, handleSetTag, tagActive } ) => {
+  return <button className=
+        { `tag ${ tagActive ? 'active' : null}`}
+         onClick={()=> handleSetTag(name)}> 
+        { name.toUpperCase ()}{} 
+        </button>
+}
+
+export default Project;
