@@ -40,7 +40,7 @@ const Project = () => {
           <div className="product">
             {filteredData.map((item, index) => 
             <div className='itemBox'>
-              <img src={ `/images/${item.imageName}` } alt='project pic'/>
+              <img src={`/images/${item.imageName}`} alt='project pic'/>
               <Btn>{item.btn}</Btn>
               <h5>{item.title}</h5>
               <p>{item.desc}</p>
@@ -49,7 +49,6 @@ const Project = () => {
           </div>
         </section>
         </Section>
-
   )
 }
 
