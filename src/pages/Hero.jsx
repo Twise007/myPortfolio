@@ -12,10 +12,11 @@ const Hero = () => {
     <>
     <Herosection id="home">   
         <div className="hero-content flex-col lg:flex-row-reverse" style={{maxWidth:"100%", paddingLeft:'5rem', paddingRight:'5rem'}}>
+          <h2>Dev-Net</h2>
           <img src={ProfilePicture} alt='profilepiciture' className="max-w-sm rounded-lg shadow-2xl" />
-          <div>
+        <div>
           <p className='font-bold p2'>Hi, I am</p>
-          <h1 className="font-bold p3 ">Oke Babatunde<br /></h1>
+          <h1 className="font-bold p3" style={{fontFamily:'fantasy'}}>Oke Babatunde<br /></h1>
           <Textz>
             <span className='text'>
               <Typewriter 
@@ -29,7 +30,7 @@ const Hero = () => {
               />
             </span>
           </Textz>
-          <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <p className="py-3" style={{fontSize:'20px'}}>Turning ideas into real life profit making product in the digital world.</p>
           <Btn>download my cv</Btn>
           </div>
         </div>

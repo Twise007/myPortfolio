@@ -28,7 +28,7 @@ const Project = () => {
   return (
         <Section id="projects">
             <Title>My Latest Featured Projects
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
+                <p>Take your time to go through some of my project am sure you will be impress</p>
             </Title>
         <section  handleSetTag= {setTag}>
           <ul>

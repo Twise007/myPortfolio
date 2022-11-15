@@ -7,7 +7,7 @@ import '../Styles/SaasAboutMe/About.scss';
 import { motion } from 'framer-motion';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -26,9 +26,9 @@ const Testimonies = () => {
     id="testimonies">
     <div className='containx'>
     <Purple>
-             <Title>Testimonies
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
-            </Title>
+       <Title>Testimonies
+          <p style={{color:"var(--color-white)"}}>testimonies from some of my former employers and colleagues </p>
+      </Title>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}   

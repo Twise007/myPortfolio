@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Head, NavMenu} from '../Styles/Header';
 import '../Styles/SaasAboutMe/About.scss';
 import { Btn } from '../components/element';
+import Logo from '../data/favicon.ico';
+
 
 
 const Header = () => {
@@ -15,14 +17,16 @@ const Header = () => {
     <div className='bar' style={{ top: '0px', position: 'sticky', borderBottom: '.5px solid', color: 'var(--color-primary)',zIndex:'10' }}>
         <div className="navbar" style={{padding:'20px', background: 'var(--color-white)'}} >
           <div className="flex-1">
-          <a href="#home" ><Btn><h1>My Portfolio</h1></Btn> </a>
+          <a href="#home" >
+          <img src={Logo} alt='logo'/>
+          </a>
           </div>
           <Head>    
             <div className="flex-none">
             <ul className="menu menu-horizontal p-0">
               {['about', 'service', 'projects', 'testimonies', 'contact me'].map((item) => (
                 <li key={`link-${item}`}>
-                  <a href={`#${item}`}>{item}</a>
+                 <Btn style={{border:'none'}}><a href={`#${item}`}>{item}</a></Btn>
                 </li>
               ))}
             </ul>

@@ -6,7 +6,6 @@ export const Timeline = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   padding-top: 20px;
-
   @media screen and (max-width: 700px) {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 30px;
@@ -31,7 +30,12 @@ export const TimelineItem = styled.div`
   font-weight: 600;
   }
   p{
-    color: var(--color-white);
+    color: var(--color-white);  
+    span{
+      font-weight: 900;
+      font-family: fantasy;
+      font-size: 20px;
+    }
   }
 `
 

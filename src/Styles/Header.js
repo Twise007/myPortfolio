@@ -3,13 +3,9 @@ import styled from "styled-components";
 
 export const Head = styled.div`
         a{
-          text-decoration: none;
-          font-size: 15px;
-          text-transform: uppercase;
-          font-weight: 500;
           &:hover {
-            color: var(--color-secondary);
-              border-bottom: 3px solid var(--color-primary);
+            border-bottom: 2px solid;
+            transition: ease-in-out 0.2s;
             }
         }
         @media (max-width: 800px) {

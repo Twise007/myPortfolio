@@ -1,8 +1,9 @@
   .container {
     position: relative;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     border: .5px solid;
-    min-height: 90vh;
+    min-height: 100vh;
     margin-top: 50px;
     overflow: hidden;
     border-radius: 10px;
@@ -25,8 +26,6 @@
   .contactTitle h2{
     color: var(--color-red);
     text-transform: capitalize;
-    padding-bottom: 20px;
-    padding-top: 100px;
     font-size: 24px;
     text-align: center;
   }
@@ -168,22 +167,6 @@
     padding: 3rem 12% 2rem 17%;
   }
   
-  .panel .content {
-    color: #fff;
-    transition: transform 0.9s ease-in-out;
-    transition-delay: 0.6s;
-  }
-  
-  .panel h3 {
-    font-weight: 600;
-    line-height: 1;
-    font-size: 1.5rem;
-  }
-  
-  .panel p {
-    font-size: 0.95rem;
-    padding: 0.7rem 0;
-  }
   
   .right-panel .image,
   .right-panel .content {
@@ -227,12 +210,11 @@
 
 @media (max-width: 1050px){
   .formContainer{
-    top: 45%;
-    left: 66%;
+    top: 33%;
+    left: 73%;
     width: 50%;
 }
 }
-
 
   @media (max-width: 870px) {
     .container {
@@ -308,13 +290,17 @@
   
   @media (max-width: 570px) {
     .formContainer{
+        top: 53%;
         width: 100%;
-        padding-left: 0px;
-
     }
-
     .image {
       display: none;
     }
 
+}
+
+@media (max-width: 330px) {
+  .formContainer{
+    left: 43%;
+}
 }
