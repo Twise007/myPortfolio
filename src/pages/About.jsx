@@ -1,6 +1,6 @@
 import React  from 'react';
 import '../Styles/SaasAboutMe/About.scss';
-import { Section, Title} from '../components/element';
+import { Purple, Section, Title} from '../components/element';
 import { motion } from 'framer-motion';
 
 
@@ -28,24 +28,24 @@ const photos = [
   {id: '9', image: wordpress },{id: '0', image: chakra },
   {id: '11', image: materialui },{id: '12', image: sass },
   {id: '13', image: styled },{id: '14', image: tailwind },
-  {id: '1', image: html },{id: '2', image: css },
-  {id: '3', image: js },{id: '4', image: cisco },
-  {id: '5', image: github },{id: '6', image: adobe},
-  {id: '7', image: react },{id: '8', image: bootstrap },
-  {id: '9', image: wordpress },{id: '0', image: chakra },
-  {id: '11', image: materialui },{id: '12', image: sass },
-  {id: '13', image: styled },{id: '14', image: tailwind },
+  {id: '15', image: html },{id: '16', image: css },
+  {id: '17', image: js },{id: '18', image: cisco },
+  {id: '19', image: github },{id: '6', image: adobe},
+  {id: '20', image: react },{id: '21', image: bootstrap },
+  {id: '22', image: wordpress },{id: '23', image: chakra },
+  {id: '24', image: materialui },{id: '25', image: sass },
+  {id: '26', image: styled },{id: '27', image: tailwind },
 
 ];
 
 const About = () => {
   return (
-    <div id='about'>
+    <div id='about' >
     <motion.div
     whileInView={{y: [0, -100], 
     opacity: [0, 1]}}
     transition={{duration:3}}>
-      <Section>
+      <Purple>
         <div className='about'>
           <div className="main">
             <img src={Aboutpic} alt="about pic" />
@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
         </div>
-       </Section>
+      </Purple>
     </motion.div>
 
     <motion.div

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Title } from '../components/element'
+import { Purple,Title } from '../components/element'
 import { Timeline, TimelineItem, TlIcon } from '../Styles/Service'
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
@@ -16,7 +16,7 @@ const Service = () => {
     opacity: [0, 1]}}
     transition={{duration:3}}
     id="service">
-        <Section>
+        <Purple>
         <Title>My Offered Service
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
         </Title>       
@@ -53,7 +53,7 @@ const Service = () => {
             </TimelineItem>
 
         </Timeline>
-        </Section>
+        </Purple>
     </motion.div>
   )
 }

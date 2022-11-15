@@ -41,7 +41,7 @@ const Project = () => {
             {filteredData.map((item, index) => 
             <div className='itemBox'>
               <img src={`/images/${item.imageName}`} alt='project pic'/>
-              <Btn>{item.btn}</Btn>
+              <Btn style={{marginTop:"10px"}}>{item.btn}</Btn>
               <h5>{item.title}</h5>
               <p>{item.desc}</p>
             </div>

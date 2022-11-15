@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-import { Section, Title, Containers } from '../components/element'
-import { Card, ImgContent, CardImage, Cardcontent, CardImages  } from '../Styles/Testimonies';
+import { Purple, Title } from '../components/element'
+import { Containers, Card, ImgContent, CardImage, CardImages  } from '../Styles/Testimonies';
 import '../Styles/SaasAboutMe/About.scss';
 import { motion } from 'framer-motion';
 
@@ -25,7 +25,7 @@ const Testimonies = () => {
     transition={{duration:3}}
     id="testimonies">
     <div className='containx'>
-    <Section>
+    <Purple>
              <Title>Testimonies
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reiciendis expedita reprehenderit veniam modi vero asperiores molestias eligendi deserunt ad?</p>
             </Title>
@@ -35,18 +35,13 @@ const Testimonies = () => {
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
-
-        }}
-        pagination={{
-          clickable: true,
         }}
         navigation={true}
-
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className='swiper'
       >
         <SwiperSlide className='swipersslide'>
-          <Containers>                  
+        <Containers>                  
           <Card>
             <ImgContent>
               <CardImages>
@@ -55,17 +50,15 @@ const Testimonies = () => {
                 </CardImage>
               </CardImages>
             </ImgContent>
-            <Cardcontent>
-              <Title>Esther Eromosele
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
                 <p>Company</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
-                        </Title>
-            </Cardcontent>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
+              </Title>
           </Card>
           </Containers>
         </SwiperSlide>
         <SwiperSlide className='swipersslide'>
-          <Containers>                  
+        <Containers>                  
           <Card>
             <ImgContent>
               <CardImages>
@@ -74,17 +67,15 @@ const Testimonies = () => {
                 </CardImage>
               </CardImages>
             </ImgContent>
-            <Cardcontent>
-              <Title>Esther Eromosele
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
                 <p>Company</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
-                        </Title>
-            </Cardcontent>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
+              </Title>
           </Card>
           </Containers>
         </SwiperSlide>
         <SwiperSlide className='swipersslide'>
-          <Containers>                  
+        <Containers>                  
           <Card>
             <ImgContent>
               <CardImages>
@@ -93,21 +84,19 @@ const Testimonies = () => {
                 </CardImage>
               </CardImages>
             </ImgContent>
-            <Cardcontent>
-              <Title>Esther Eromosele
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
                 <p>Company</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
-                        </Title>
-            </Cardcontent>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
+              </Title>
           </Card>
           </Containers>
         </SwiperSlide>
       </Swiper>
 
-    </Section>
+    </Purple>
     </div>
     </motion.div>
   )
 }
 
-export default Testimonies
+export default Testimonies;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from '../Styles/Social';
-import { BsGithub, BsWhatsapp, BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { BsGithub, BsWhatsapp, BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs';
 
 
 const Social = () => {

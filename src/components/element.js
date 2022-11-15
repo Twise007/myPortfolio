@@ -1,17 +1,23 @@
 import styled from "styled-components"
 
 
-export const Title = styled.div` 
-    background: var(--color-white);
+export const Title = styled.div`
     color: var(--color-red);
     text-transform: capitalize;
     padding: 20px;
+    padding-bottom: 10px;
     font-size: 24px;
     text-align: center;
-    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
     p{  
         padding-top: 1px;
         text-transform: capitalize;
+        color: var(--color-primary);
+        text-align: justify;
     }
 `
 
@@ -30,20 +36,6 @@ export const Section = styled.div`
             padding-right: 10px;
     }
 ` 
-
-export const Containers = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #efefef;
-    padding: 15px;
-    border-radius: 25px;
-    @media (min-width: 770px) {
-        
-    }
-    
-    
-`
 
 export const Btn = styled.div`
     position: relative;
@@ -85,4 +77,11 @@ export const Btn = styled.div`
         transform: skewX(45deg) translateX(-150px);
     }
 `
-
+export const Purple = styled.div`
+    padding-top: 30px;
+    background: var(--color-secondary);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--color-white);
+`

@@ -1,7 +1,5 @@
 .about {
   display: grid;
-  padding-top: 30px;
-  background-color: var(--color-white);
 }
 .about .main {
   display: flex;
@@ -10,13 +8,17 @@
 }
 .about .main img {
   display: block;
+  justify-content: center;
+  align-items: center;
   margin-right: 100px;
-  width: 40%;
+  width: 30%;
   border-radius: 10%;
 }
 .about .main .about-text {
   display: block;
   width: 500px;
+  color: var(--color-white);
+  padding: 0px 50px;
 }
 .about .main .about-text h1 {
   color: var(--color-red);
@@ -25,11 +27,14 @@
   margin-bottom: 20px;
 }
 .about .main .about-text h5 {
-  color: var(--color-secondary);
+  color: var(--color-white);
   font-size: 30px;
   text-transform: capitalize;
   margin-bottom: 10px;
   letter-spacing: 1px;
+}
+.about .main .about-text p {
+  color: var(--color-white);
 }
 
 .skills {
@@ -39,6 +44,7 @@
   width: auto;
   display: flex;
   background: var(--color-white);
+  margin-top: -10px;
 }
 .skills img {
   position: relative;
@@ -55,20 +61,12 @@
 }
 
 .containx .swiper {
+  margin-top: 10px;
   width: 500px;
-}
-@media screen and (max-width: 500px) {
-  .containx .swiper {
-    width: 300px;
-  }
 }
 @media screen and (min-width: 300px) {
   .containx .swiper {
-    width: 200px;
-  }
-  .about .about-text p {
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 290px;
   }
 }
 @-webkit-keyframes scroll {
@@ -98,6 +96,9 @@
 @media screen and (max-width: 600px) {
   .about {
     justify-content: center;
+  }
+  .about .main img {
+    margin-right: 0px;
   }
   .about .about-text {
     text-align: center;
