@@ -50,9 +50,10 @@ const Testimonies = () => {
                 </CardImage>
               </CardImages>
             </ImgContent>
-              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
-                <p>Company</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>
+                Esther Eromosele
+                <p style={{padding:'10px'}}>Company</p>
+                <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p>
               </Title>
           </Card>
           </Containers>
@@ -68,9 +69,8 @@ const Testimonies = () => {
               </CardImages>
             </ImgContent>
               <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
-                <p>Company</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
-              </Title>
+              <p style={{padding:'10px'}}>Company</p>
+                <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p></Title>
           </Card>
           </Containers>
         </SwiperSlide>
@@ -85,9 +85,8 @@ const Testimonies = () => {
               </CardImages>
             </ImgContent>
               <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
-                <p>Company</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur dolor corrupti magnam quas placeat at. Quo amet libero ab exercitationem. Enim, tempora nostrum eligendi consequuntur cumque repellat maxime error!</p>
-              </Title>
+              <p style={{padding:'10px'}}>Company</p>
+                <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p></Title>
           </Card>
           </Containers>
         </SwiperSlide>

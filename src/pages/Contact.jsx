@@ -3,7 +3,6 @@ import { Section, Btn } from '../components/element';
 
 import '../Styles/Contact.css';
 import Contactsvg from '../data/contact.svg';
-import { motion } from 'framer-motion';
 
 //using Emailjs
 import emailjs from '@emailjs/browser';
@@ -32,13 +31,8 @@ const Contact = () => {
     };
 
   return (
-    <motion.div
-    whileInView={{y: [0, -100], 
-    opacity: [0, 1]}}
-    transition={{duration:3}}
-    id="contact me">
     <Section>
-    <div className="container">
+    <div className="contactContainer" id='contact me'>
         <div className="formContainer">
           <div className='contactTitle'>
             <h2>Contact page</h2>
@@ -82,17 +76,10 @@ const Contact = () => {
           {/*svg gotten from undraw.co*/} 
           <img src={Contactsvg} alt="contact svg" className="image"></img>
         </div>
-          {/*<div className="panel right-panel">
-            svg gotten from undraw.co 
-          <img src={Homesvg} alt="contact svg" className="image"></img>
-        </div>*/}
       </div>
 
     </div>
-
     </Section>
-    </motion.div>
-
   )
 }
 

@@ -86,3 +86,38 @@ export const Purple = styled.div`
             padding-right: 10px;
     }
 `
+
+export const HeadTag = styled.div`
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding-top: 15px; 
+    flex-wrap: wrap;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            li{
+                list-style: none;
+                padding: 1px 5px;
+                margin: 5px;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+                border: .5px solid var(--color-primary);
+            }
+        }
+    .active{
+        background: var(--color-secondary);
+        color: var(--color-white);
+        padding: inherit;
+        border-radius: 5px;
+    }
+`

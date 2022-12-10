@@ -7,9 +7,6 @@ import { motion } from 'framer-motion';
 
 const Service = () => {
 
-    
-
-
   return (
     <motion.div
     whileInView={{y: [0, -100],
