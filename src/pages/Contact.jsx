@@ -2,12 +2,11 @@ import React, { useRef } from 'react';
 import { Section, Btn } from '../components/element';
 
 import '../Styles/Contact.css';
-import Homesvg from'../data/home.svg';
 import Contactsvg from '../data/contact.svg';
-import { motion } from 'framer-motion';
 
 //using Emailjs
 import emailjs from '@emailjs/browser';
+import Social from './Social';
 
 
 const Contact = () => {
@@ -32,19 +31,14 @@ const Contact = () => {
     };
 
   return (
-    <motion.div
-    whileInView={{y: [0, -100], 
-    opacity: [0, 1]}}
-    transition={{duration:3}}
-    id="contact me">
     <Section>
-    <div className="container">
+    <div className="contactContainer" id='contact me'>
         <div className="formContainer">
           <div className='contactTitle'>
             <h2>Contact page</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Sit, reiciendis expeditaLorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Sit, reiciendis expedita</p>
+            <p>Reach out to me through my media or drop me a mail below.<br>
+            </br>I can't wait to hear from you</p>
+            <Social></Social>
           </div>
           <form ref={form} onSubmit={sendEmail}>
             <div className="row100">
@@ -82,17 +76,10 @@ const Contact = () => {
           {/*svg gotten from undraw.co*/} 
           <img src={Contactsvg} alt="contact svg" className="image"></img>
         </div>
-        <div className="panel right-panel">
-          {/*svg gotten from undraw.co*/} 
-          <img src={Homesvg} alt="contact svg" className="image"></img>
-        </div>
       </div>
 
     </div>
-
     </Section>
-    </motion.div>
-
   )
 }
 

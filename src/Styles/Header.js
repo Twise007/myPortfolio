@@ -3,13 +3,9 @@ import styled from "styled-components";
 
 export const Head = styled.div`
         a{
-          text-decoration: none;
-          font-size: 15px;
-          text-transform: uppercase;
-          font-weight: 500;
           &:hover {
-            color: var(--color-secondary);
-              border-bottom: 3px solid var(--color-primary);
+            border-bottom: 2px solid;
+            transition: ease-in-out 0.2s;
             }
         }
         @media (max-width: 800px) {
@@ -27,6 +23,8 @@ export const NavMenu = styled.div`
     align-items: center;
     background-color: var(--color-secondary);
     svg {
+      justify-content: center;
+      align-items: center;
       width: 70%;
       height: 70%;
       color: var(--color-white);
@@ -63,21 +61,20 @@ export const NavMenu = styled.div`
   
       ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        margin: 30px;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        
-
+        border-top: 1px solid var(--color-primary);
           a {
             text-decoration: none;
             font-size: 15px;
             text-transform: uppercase;
             font-weight: 500;
+            border-bottom: 1px solid var(--color-primary);
             &:hover {
               color: var(--color-secondary);
               border-bottom: 3px solid var(--color-primary); 

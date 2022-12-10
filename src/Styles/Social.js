@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const SocialIcon = styled.div`
         position: relative;
         display: flex;
-        padding-top: 30px;
         justify-content: center;
         li{
             position: relative;

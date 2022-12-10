@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
+export const Containers = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+    padding: 15px;
+    border-radius: 5px;
+    @media (min-width: 770px) {   
+    } 
+`
 
 export const Card = styled.div`
-    border-radius: 5px;
-    background-color: var(--color-white);
-    width: 300px;
     @media screen and (max-width:300px){
         width: 180px;
     }
-`
-
-export const Cardcontent = styled.div`
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 300px;
-    height: 320px;
 `
 
 export const ImgContent = styled.div`
@@ -24,7 +24,7 @@ export const ImgContent = styled.div`
     padding: 5px 0px;
     row-gap: 5px;
     background: var(--color-secondary);
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 `
 export const CardImages = styled.div`
     height: 155px;
