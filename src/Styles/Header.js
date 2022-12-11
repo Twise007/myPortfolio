@@ -25,30 +25,24 @@ export const NavMenu = styled.div`
     svg {
       justify-content: center;
       align-items: center;
-      width: 70%;
-      height: 70%;
       color: var(--color-white);
       cursor: pointer;
     }
   
     div {
+      display: flex;
       position: fixed;
       height: 100%;
-      top: 0;
+      top: 90px;
       padding-top: 0px;
       align-items: center;
-
       margin-right: 14rem;
       z-index: 20;
       width: 20rem;
-      display: flex;
-
       flex-direction: column;
-      background: var(--color-white);
-  
+      background: var(--color-white); 
       /* top box shadow */
       box-shadow: 0px 0px 20px var(--color-secondary);
-  
       svg {
         border-radius: 50%;
         width: 35px;

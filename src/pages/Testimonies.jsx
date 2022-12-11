@@ -12,9 +12,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
-import ProfilePicture from '../data/profile.png'
-
+import FemiPic from '../data/femi.png';
+import IsrealPic from '../data/isreal.png';
+import SamuelPic from '../data/samuel.png';
 
 
 const Testimonies = () => {
@@ -46,14 +46,14 @@ const Testimonies = () => {
             <ImgContent>
               <CardImages>
                 <CardImage>
-                  <img src={ProfilePicture} alt="testimonies pic" className='cardimg' />
+                  <img src={FemiPic} alt="testimonies pic" className='cardimg' />
                 </CardImage>
               </CardImages>
             </ImgContent>
               <Title style={{borderRadius:"0px 0px 5px 5px"}}>
-                Esther Eromosele
-                <p style={{padding:'10px'}}>Company</p>
-                <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p>
+                Ademiju Femi
+                <p style={{padding:'10px'}}>colleague</p>
+                <p style={{height:"200px"}}>Tunde is a very hardworking and has passion for coding (eye-catching products or the exact design). He delivers his tasks right before the deadline with attention to detail and produces product solutions</p>
               </Title>
           </Card>
           </Containers>
@@ -64,12 +64,12 @@ const Testimonies = () => {
             <ImgContent>
               <CardImages>
                 <CardImage>
-                  <img src={ProfilePicture} alt="testimonies pic" className='cardimg' />
+                  <img src={SamuelPic} alt="testimonies pic" className='cardimg' />
                 </CardImage>
               </CardImages>
             </ImgContent>
-              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
-              <p style={{padding:'10px'}}>Company</p>
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Samuel Linus
+              <p style={{padding:'10px'}}>Instructor</p>
                 <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p></Title>
           </Card>
           </Containers>
@@ -80,12 +80,12 @@ const Testimonies = () => {
             <ImgContent>
               <CardImages>
                 <CardImage>
-                  <img src={ProfilePicture} alt="testimonies pic" className='cardimg' />
+                  <img src={IsrealPic} alt="testimonies pic" className='cardimg' />
                 </CardImage>
               </CardImages>
             </ImgContent>
-              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Esther Eromosele
-              <p style={{padding:'10px'}}>Company</p>
+              <Title style={{borderRadius:"0px 0px 5px 5px"}}>Isreal
+              <p style={{padding:'10px'}}>colleague</p>
                 <p style={{height:"200px"}}>Lorem ipsum dolor sit amet</p></Title>
           </Card>
           </Containers>

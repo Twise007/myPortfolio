@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Btn, Section,   HeadTag, Title } from '../components/element';
+import {Btn, Section, HeadTag, Title } from '../components/element';
 import { motion } from "framer-motion";
 
 //import "../Styles/project.css";
@@ -12,15 +12,15 @@ const cardData = {
     [
       {id: '1', imageName: 'project1.png', tag:'web design', visit:'', 
       desc:'Web design built on React, go through it and send me your thought about it then let set you up with one.', 
-      title:'portfolio website', link:'https://github.com/'},
-      {id: '2', imageName: 'img2.jpg', tag:'web develop', visit:'https://tee-o-todo.netlify.app/', 
-      desc:'A Todo-App that helps you keep track of your activties. This project is built on HTML, CSS, JS.', title:'todo-app', link:'https://github.com/'},
-      {id: '3', imageName: 'img3.jpg', tag:'UIUX Design', visit:'Visit', 
-      desc:'', title:'title3'},
-      {id: '4', imageName: 'img4.jpg', tag:'web design', visit:'Visit', 
-      desc:'', title:'title4'},
-      {id: '5', imageName: 'weather.jpg', tag:'web develop', visit:'https://tee-o-weather.netlify.app/', 
+      title:'portfolio website', link:'https://github.com/Twise007/myPortfolio'},
+      {id: '2', imageName: 'taskManager.png', tag:'web develop', visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
+      desc:'This is an app help in keeping track of your activities the app is built on a MERNSTACK applications.', title:'Task Manager'},
+      {id: '3', imageName: 'img4.jpg', tag:'web design', visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
+      desc:'Website built on React, the link to site is attached below.', title:'Church Website'},
+      {id: '4', imageName: 'weather.jpg', tag:'web develop', visit:'https://tee-o-weather.netlify.app/', 
       desc:'The is Weather app build on React and Bootstrap. This apps was made to help you get the weather report of major city around the world', title:'Weather App', link:'https://github.com/'},
+      {id: '5', imageName: 'img2.jpg', tag:'web develop', visit:'https://tee-o-todo.netlify.app/', 
+      desc:'A Todo-App that helps you keep track of your activties. This project is built on HTML, CSS, JS.', title:'todo-app', link:'https://github.com/'},
     ]
 };
 
